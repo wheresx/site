@@ -1,0 +1,60 @@
+/* Center everything in the page */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+#date-and-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    gap: 20pt;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+        width: 60%; /* For larger screens */
+        max-width: 800px;
+    }
+}
+
+#location {
+    padding: 1pt;
+    font-size: 18pt;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 20px;
+    font-size: 25pt;
+}
+
+#upnext {
+    /* Made visible by JS when data available */
+    display: none;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+h3 {
+    margin: 1em;
+}
+
+table {
+    margin-top: 0px;
+    outline: 1px solid black;
+}
